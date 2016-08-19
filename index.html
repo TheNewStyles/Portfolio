@@ -6,19 +6,19 @@
   <title>Tyler Peterson's Portfolio</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
+  <!-- custom css -->
   <link rel="stylesheet" type="text/css" href="portfolio.css">
 
-
+  <!-- social icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+  <!-- dev icons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>   
+  <!-- custom javascript -->
   <script type="text/javascript" src="portfolio.js" async></script>
   
 
@@ -27,7 +27,7 @@
 
 <!-- Nav Menu   -->
     <div class="fixed-nav-bar">    
-      <span id="hamburger" class="fa fa-bars fa-3x col-md-1 col-md-offset-11 col-xs-2 col-xs-offset-10" onclick="openNav()"></span>  
+      <span id="hamburger" class="fa fa-bars fa-3x col-md-1 col-md-offset-11 col-xs-3 col-xs-offset-9" onclick="openNav()"></span>  
       <nav id="nav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -49,38 +49,31 @@
         <div class="inner-wrap"> 
             
           <!-- Back To Top     -->    
-          <a href="#" class="back-to-top"><div class="fa fa-arrow-up fa-3x"></div></a>       
-        
-          <!--  Welcome  -->
-          <section class="col-md-12">      
-            <p>
-              My name is Tyler Peterson and I live in Chicago. I got started in Software Qualtiy Assurance as an intern my senior year at The University Of Utah where I graduated in Information Systems. I still work full time as QA but I have a passion for development and I enjoy learning about UI/UX and design. 
-            </p>
-            <hr class="col-md-12">
-          </section>      
+          <a href="#" class="back-to-top"><div class="fa fa-arrow-up fa-3x"></div></a>        
           
           <section class="portfolio-logos"><!-- Portfolio projects-->
-            <h2>Projects</h2>
+            <h2>PORTFOLIO</h2>
             <div class="row">
-              <img class="col-sm-3" src="img/Logos/bookworm-logo.png" alt="" />
-              <img class="col-sm-3" src="img/Logos/BrickBreaker-logo.png" alt="" />
-              <img class="col-sm-3" src="img/Logos/Quiz-Logo.png" alt="" /> 
-              <img class="col-sm-3" src="img/Logos/Space-shooter.png" alt="" />
+              <img class="col-lg-2 col-lg-offset-1" src="img/Logos/bookworm-logo.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/BrickBreaker-logo.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/Quiz-Logo.png" alt="" /> 
+              <img class="col-lg-2" src="img/Logos/Space-shooter.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/logo-03.png" alt="" />
              </div> 
              <div class="row">
-              <img class="col-sm-3" src="img/Logos/logo-03.png" alt="" />
-              <img class="col-sm-3" src="img/Logos/logo-03.png" alt="" />
-              <img class="col-sm-3" src="img/Logos/logo-03.png" alt="" /> 
-              <img class="col-sm-3" src="img/Logos/logo-03.png" alt="" /> 
+              <img class="col-lg-2 col-lg-offset-1" src="img/Logos/logo-03.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/logo-03.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/logo-03.png" alt="" /> 
+              <img class="col-lg-2" src="img/Logos/logo-03.png" alt="" />
+              <img class="col-lg-2" src="img/Logos/logo-03.png" alt="" />  
              </div>              
           </section> <!-- End portfolio projects-->     
 
 
 
           <!-- Start of skill icons -->
-
           <section class="skillIcons">
-            <h2>Skills and Tools:</h2>
+            <h2>SKILLS AND TOOLS:</h2>
             <div class="row">
               <div class="col-lg-3 col-sm-6 col-xs-12">
                 <i class="devicon-jquery-plain-wordmark"></i>
@@ -98,7 +91,7 @@
             
             <div class="row">
               <div class="col-lg-3 col-sm-6 col-xs-12">
-                <i class="devicon-github-plain-wordmark"></i>
+                <i class="devicon-git-plain"></i>
               </div>
               <div class="col-lg-3 col-sm-6 col-xs-12">
                 <i class="devicon-bootstrap-plain-wordmark"></i>
@@ -107,43 +100,84 @@
                 <i class="devicon-java-plain-wordmark"></i>
               </div>
               <div class="col-lg-3 col-sm-6 col-xs-12">
-                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-csharp-plain"></i>
               </div>
-            </div>
+            </div> 
 
-            <hr>
-          </section>        
+            <div class="row">
+              <div class="col-lg-3 col-lg-offset-3 col-sm-6 col-xs-12">
+                <i class="devicon-illustrator-plain"></i>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-xs-12">
+                <i class="devicon-photoshop-plain"></i>
+              </div>             
+            </div> 
+
+          </section>    
 
 
+          <!-- contact / about / social -->
+          <section class="row">
+            <!--  About  -->
+            <div class="get-in-touch">
+              <div class="col-lg-10 col-lg-offset-1">
+              <h3>ABOUT ME</h3>
+                <p>
+                My name is Tyler Peterson and I live in Chicago. I got started in Software Qualtiy Assurance as an intern my senior year at The University Of Utah where I graduated in Information Systems. I still work full time as QA but I have a passion for development and I enjoy learning about UI/UX and design. 
+                </p> 
+              </div>
+          </section>
+              <!-- Get in touch -->
+     <!--          <div class="col-lg-4">
+                <h3>GET IN TOUCH</h3>
+                <form role="form">
+                  <div class="form-group">
+                    <input type="text" placeholder="NAME" class="form-control" id="usr">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" placeholder="E-MAIL" class="form-control" id="eml">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="YOUR MESSAGE" rows="5" id="msg"></textarea>
+                  </div>
+                  <input type="button" class="buttonSend" value="SEND">
+                </form>
+              </div>    -->            
 
-            
-          <div class="contact">
-            <a href="https://github.com/TheNewStyles" target="_blank">        
-                <div class="social">
-                  <div class="fa fa-github"></div>
-                </div>               
-            </a>
-            <a href="https://www.linkedin.com/in/tyler-peterson-40717192" target="_blank">        
-                <div class="social entypo-linkedin">
-                  <div class="fa fa-linkedin"></div>
-                </div>        
-            </a>
-            <a href="mailto:tyler.peterson@utah.edu" target="_blank">        
-                <div class="social">
-                  <div class="fa fa-envelope"></div>
-                </div>        
-            </a>
-            <a href="">        
-                <div class="social">
-                  <div class="fa fa-dribbble"></div>
-                </div>        
-            </a> 
-            <a href="">        
-                <div class="social">
-                  <div class="fa fa-codepen"></div>
-                </div>        
-            </a>
-          </div> <!--  end social   -->   
+              <!-- Social  -->
+            <section class="row">
+              <div class="col-lg-12">
+                <h3>CONNECT</h3>
+                  <div class="social">
+                    <a href="https://github.com/TheNewStyles" target="_blank">        
+                        <div class="social-icons">
+                          <div class="fa fa-github"></div>
+                        </div>               
+                    </a>
+                    <a href="https://www.linkedin.com/in/tyler-peterson-40717192" target="_blank">        
+                        <div class="social-icons entypo-linkedin">
+                          <div class="fa fa-linkedin"></div>
+                        </div>        
+                    </a>
+                    <a href="mailto:tyler.peterson@utah.edu" target="_blank">        
+                        <div class="social-icons">
+                          <div class="fa fa-envelope"></div>
+                        </div>        
+                    </a>
+                    <a href="">        
+                        <div class="social-icons">
+                          <div class="fa fa-dribbble"></div>
+                        </div>        
+                    </a> 
+                    <a href="">        
+                        <div class="social-icons">
+                          <div class="fa fa-codepen"></div>
+                        </div>        
+                    </a>
+                  </div>
+              </div> <!--  end social   -->   
+            </section>
+          
 
 
           <footer class="col-md-12">
