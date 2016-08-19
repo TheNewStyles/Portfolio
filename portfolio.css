@@ -116,13 +116,11 @@ and (max-device-width : 1024px)  {
   }
 }
 /***************** Social/Contact *****************/
-
-.contact {
-  padding: 4em 0 0 0;
-  text-align: center;
+.social {
+  padding-top: 1em; 
 }
 
-.social {
+.social-icons {
   display: inline-block;
   width: 70px;
   height: 70px;
@@ -138,39 +136,34 @@ and (max-device-width : 1024px)  {
   transition: color .3s;
 }
 
-a {
+a:hover{
   text-decoration: none;
 }
 
-a:hover {
+a:focus{
   text-decoration: none;
 }
 
-.social:hover {
+.social a:hover {
+  text-decoration: none;
+}
+
+.social-icons:hover {
   color: #272932;
   cursor: pointer;
+  text-decoration: none;
 }
+
+/***************** footer *****************/
 
 footer {
   margin-bottom: 1em;
 }
 
-hr {
-  color: #272932;
-  border-color: #272932;
-  opacity: 0.5;  
-}
-
 footer hr {
   color: #272932;
   border-color: #272932;
-}
-
-section hr {
-  color: #272932;
-  border-color: #272932;  
-  margin-left: auto;
-  margin-right: auto;
+  opacity: 0.5;
 }
 
 /***************** Nav menu *****************/
@@ -228,9 +221,10 @@ section hr {
 
 #hamburger {
   color: #f05d5e;
-  margin-top: 1px;  
+  margin-top: 5px;  
   margin-bottom: 1em;
   z-index: 5;  
+
 }
 
 #hamburger:hover {
@@ -271,9 +265,19 @@ a.back-to-top {
   border-radius: 30px;
 }
 
+/***************** Welcome *****************/
+.get-in-touch {
+  max-width: 100%;
+  display: block;
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-top: 100px;  
+  min-height: 400px;
+}
+
 /***************** Portfolio logos *****************/
 .portfolio-logos {
-  padding-top: 60px;  
+  padding-bottom: 60px;  
 }
 
 
@@ -282,6 +286,9 @@ a.back-to-top {
   font-size: 100px;
   color: #272932;
   background-color: #0f7173;
-  padding-top: 20px; 
+  padding-top: 100px; 
+  padding-bottom: 20px; 
+  min-height: 600px;
 }
+
 
