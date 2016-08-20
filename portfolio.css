@@ -1,7 +1,7 @@
 body {
-  background: #e7ecef;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;    
+  background: #e7ecef; 
+  text-align: center; 
+  font-family: "Open Sans", sans-serif;   
 }
 
 .wrap {  
@@ -13,7 +13,7 @@ body {
   padding-top: 50px;   
   margin-right: auto;
   margin-left: auto;
-  min-width: 100%;
+  min-width: 99%;
 }
 
 .inner-wrap {
@@ -44,6 +44,12 @@ img {
   cursor: pointer;
   opacity: .8;
 }
+
+.top-margin {
+  margin-top: 3em;
+}
+
+/***************** Header img and personal logo *****************/
 
 header {
   background-color: #999;
@@ -81,6 +87,8 @@ header img {
   -webkit-transform: translateZ(0);
 }
 
+/***************** Media queries for header imgs *****************/
+
 @media screen and (max-width:  800px) {
   header{
     height: 400px;
@@ -116,6 +124,19 @@ and (max-device-width : 1024px)  {
     top: 400px;
   }
 }
+
+/***************** Extend to edges of screen *****************/
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+
 /***************** Social/Contact *****************/
 .social {
   padding-top: 1em; 
@@ -135,6 +156,7 @@ and (max-device-width : 1024px)  {
   background: #f05d5e;
   overflow: hidden;
   transition: color .3s;
+  margin-bottom: 30px; 
 }
 
 a:hover{
@@ -157,16 +179,20 @@ a:focus{
 
 /***************** footer *****************/
 
-footer {
-  margin-bottom: 1em;
+footer {  
   margin-right: auto;
   margin-left: auto;
+  padding-top: 35px; 
+  background-color: #0f7173;
+  height: 80px;  
+  font-size: 15px;  
+  color: #e7ecef;
+  font-family: "Open Sans", sans-serif;  
 }
 
-footer hr {
-  color: #272932;
-  border-color: #272932;
-  opacity: 0.5;
+hr {    
+  opacity: 0.5; 
+  border-top: 1px solid #272932 !important; 
 }
 
 /***************** Nav menu *****************/
@@ -294,7 +320,4 @@ a.back-to-top {
   min-height: 600px;
 }
 
-.margin-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
+
