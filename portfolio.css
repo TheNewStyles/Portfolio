@@ -1,5 +1,5 @@
 body {
-  background: #F5F5F5;
+  background: #e7ecef;
   font-family: "Open Sans", sans-serif;
   text-align: center;    
 }
@@ -9,7 +9,7 @@ body {
   position: relative;  
   z-index: 200;
   top: 700px;
-  background-color: #fff;
+  background-color: #e7ecef;
   padding-top: 50px;   
   margin-right: auto;
   margin-left: auto;
@@ -17,7 +17,7 @@ body {
 }
 
 .inner-wrap {
-  background-color: #fff;
+  background-color: #e7ecef;
   height: auto;
   position: relative;  
   max-width: 100%;
@@ -88,7 +88,8 @@ header img {
   header img{
     height: auto;
     top: 100px;
-    width: 95%;
+    width: 90%;
+    margin-right: 25px;
   }
   .wrap{
     top: 300px;
@@ -158,6 +159,8 @@ a:focus{
 
 footer {
   margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 footer hr {
@@ -259,7 +262,7 @@ a.back-to-top {
   z-index: 999;
   right: 20px;
   bottom: 20px;  
-  background: #f05d5e url("img/Logos/up-arrow.png") no-repeat center 43%;
+  background: #f05d5e url("images/logos/up-arrow.png") no-repeat center 43%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -291,4 +294,7 @@ a.back-to-top {
   min-height: 600px;
 }
 
-
+.margin-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
