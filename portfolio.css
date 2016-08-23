@@ -40,14 +40,10 @@ img {
   padding-top: 20px;
 }
 
-.wrap img:hover {
-  cursor: pointer;
-  opacity: .8;
-}
-
 .top-margin {
   margin-top: 3em;
 }
+
 
 /***************** Header img and personal logo *****************/
 
@@ -86,6 +82,46 @@ header img {
   min-width: 275px;
   -webkit-transform: translateZ(0);
 }
+
+/***************** Portfolio logos *****************/
+.portfolio-logos {
+  padding-bottom: 70px;  
+  padding-top: 60px;
+}
+
+
+.logo-container:hover { 
+   -webkit-filter: contrast(150%);
+}
+
+.logo-container:hover figcaption {
+  opacity: 1;
+}
+
+.logo-container:hover figcaption p{
+
+}
+
+.logo-container figure {     
+  margin-right: auto;
+  margin-left: auto;  
+}
+
+.logo-container img {
+  height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  max-width: 100%; 
+  max-height: 330px;
+}
+
+.logo-container:hover img {
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+}
+
 
 /***************** Media queries for header imgs *****************/
 
@@ -304,11 +340,6 @@ a.back-to-top {
   min-height: 400px;
 }
 
-/***************** Portfolio logos *****************/
-.portfolio-logos {
-  padding-bottom: 60px;  
-}
-
 
 /***************** Skill icon section *****************/
 .skillIcons{
@@ -322,6 +353,10 @@ a.back-to-top {
 
 .padding-top {
   padding-top: 65px;
+}
+
+.skillsIconRows {
+  margin-top: .5em;
 }
 
 
