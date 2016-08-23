@@ -89,17 +89,20 @@ header img {
   padding-top: 60px;
 }
 
+.logo-container:hover a {
+  text-decoration: none;
+}
 
 .logo-container:hover { 
-   -webkit-filter: contrast(150%);
+   -webkit-filter: contrast(120%);
 }
 
 .logo-container:hover figcaption {
   opacity: 1;
 }
 
-.logo-container:hover figcaption p{
-
+.logo-container figcaption p{
+    min-height: 89px;
 }
 
 .logo-container figure {     
@@ -347,7 +350,7 @@ a.back-to-top {
   color: #272932;
   background-color: #0f7173;
   padding-top: 100px; 
-  padding-bottom: 20px; 
+  padding-bottom: 70px; 
   min-height: 600px;
 }
 
