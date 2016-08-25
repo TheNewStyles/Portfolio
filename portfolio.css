@@ -177,9 +177,9 @@ and (max-device-width : 1024px)  {
 
 
 /***************** Social/Contact *****************/
-.social {
+/* .social {
   padding-top: 3em; 
-}
+} */
 
 .social-icons {
   display: inline-block;
@@ -223,7 +223,7 @@ footer {
   margin-left: auto;
   padding-top: 35px; 
   background-color: #0f7173;
-  height: 80px;  
+  height: 90px;  
   font-size: 15px;  
   color: #e7ecef;
   font-family: "Open Sans", sans-serif;  
@@ -376,6 +376,8 @@ canvas {
 #gameCanvas {
   margin-bottom: 40px;
   padding: 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 #phaserGame {
