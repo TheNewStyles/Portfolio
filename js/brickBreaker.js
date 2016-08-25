@@ -2,6 +2,8 @@
 
 // canvas variables
 var canvas = document.getElementById("gameCanvas");
+canvas.width  = window.innerWidth;
+canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 
 // ball variables
@@ -103,21 +105,21 @@ function getPosition(el) {
 
 //functions for bricks, score, ball, and paddle
 function drawScore(){
-	ctx.font = "16px Arial";
+	ctx.font = "60px Arial";
 	ctx.fillStyle = "#3AAFB9";
-	ctx.fillText("Score: "+score, 15, 20);
+	ctx.fillText("Score: "+score, 20, 70);
 } 
 
 function drawLives(){
-	ctx.font = "16px Arial";
+	ctx.font = "60px Arial";
 	ctx.fillStyle = "#3AAFB9";
-	ctx.fillText("Lives: "+lives, canvas.width-70, 20);
+	ctx.fillText("Lives: "+lives, canvas.width-250, 70);
 }
 
 function drawStartButton(){
-	ctx.font = "24px Arial";
+	ctx.font = "72px Arial";
 	ctx.fillStyle = "#3AAFB9";
-	ctx.fillText("START", canvas.width/2-40, canvas.height/2)
+	ctx.fillText("START", canvas.width/2-120, canvas.height/2+35)
 }
 
 function drawBricks(){
