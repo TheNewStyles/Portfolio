@@ -1,5 +1,10 @@
-body {
+html{
   background: #e7ecef; 
+  height: 100%;
+}
+
+body {
+  background: #e7ecef !important; 
   text-align: center; 
   font-family: "Open Sans", sans-serif; 
 }
