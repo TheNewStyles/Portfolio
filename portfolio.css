@@ -13,9 +13,9 @@ body {
   height: auto;
   position: relative;  
   z-index: 200;
-  top: 700px;
+  top: 40em;
   background-color: #e7ecef;
-  padding-top: 50px;   
+  padding-top: 7em;   
   margin-right: auto;
   margin-left: auto;
   min-width: 99%;
@@ -63,35 +63,37 @@ header {
   background-size: cover;
   margin-bottom: 4em;
   text-align: center;
-  height: 50px;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 2;
-  min-height: 700px;
+  min-height: 40em;
   max-width: 101%;
   margin-right: auto;
   margin-left: auto; 
 }
 
 header img {  
-  top: 200px;
-  height: auto;
-  width: 50%;  
-  padding-bottom: 1.3em;
-  padding-top: .5em;
-  padding-right: 15px;
-  padding-left: 15px;
-  position: relative;  
-  max-width: 750px;
-  min-width: 275px;
-  -webkit-transform: translateZ(0);
+  top: 12.5em;
+}
+
+
+/***************** Media queries for header imgs *****************/
+
+@media screen and (max-width:  800px) {
+
+  header img{
+    height: auto;
+  }
+  .wrap{
+    top: 30em;
+  }
 }
 
 /***************** Portfolio logos *****************/
 .portfolio-logos {
-  padding-bottom: 70px;  
-  padding-top: 60px;
+  padding-bottom: 7em;  
+  padding-top: 1em;
 }
 
 .logo-container:hover a {
@@ -130,45 +132,6 @@ header img {
   transform: scale(.9);
 }
 
-
-/***************** Media queries for header imgs *****************/
-
-@media screen and (max-width:  800px) {
-  header{
-    height: 400px;
-  }
-  header img{
-    height: auto;
-    top: 100px;
-    width: 90%;
-    margin-right: 25px;
-  }
-  .wrap{
-    top: 300px;
-  }
-}
-
-@media only screen and (max-width : 800px){
-  header img {
-    top:10em;    
-  }
-  .wrap{
-    top: 400px;
-  }
-
-}
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
-  header img {
-    top:10em;    
-  }
-  .wrap{
-    top: 400px;
-  }
-}
-
 /***************** Extend to edges of screen *****************/
 .container-fluid {
   padding-left: 0 !important;
@@ -182,9 +145,6 @@ and (max-device-width : 1024px)  {
 
 
 /***************** Social/Contact *****************/
-/* .social {
-  padding-top: 3em; 
-} */
 
 .social-icons {
   display: inline-block;
@@ -226,7 +186,7 @@ a:focus{
 footer {  
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5em;
+/*   margin-top: 5em; */
   padding-top: 4.5em; 
   padding-bottom: 2em;
   background-color: #0f7173;
@@ -339,33 +299,27 @@ a.back-to-top {
   border-radius: 30px;
 }
 
-/***************** Welcome *****************/
+/***************** About Me *****************/
 .get-in-touch {
   max-width: 100%;
   display: block;
   letter-spacing: 2px;
-  padding: 10px;
-  padding-top: 100px;  
-  min-height: 400px;
+  padding-top: 7em;
+  padding-bottom:  35em;
 }
 
 
 /***************** Skill icon section *****************/
 .skillIcons{
-  font-size: 100px;
+  font-size: 7em;
   color: #272932;
   background-color: #0f7173;
-  padding-top: 100px; 
-  padding-bottom: 70px; 
-  min-height: 600px;
-}
-
-.padding-top {
-  padding-top: 65px;
+  padding-top: 1.2em; 
+  padding-bottom: 1.2em; 
 }
 
 .skillsIconRows {
-  margin-top: .5em;
+  margin-top: .65em;
 }
 
 
