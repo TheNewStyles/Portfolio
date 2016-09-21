@@ -186,7 +186,7 @@ a:focus{
 footer {  
   margin-right: auto;
   margin-left: auto;
-/*   margin-top: 5em; */
+  margin-top: 5em;
   padding-top: 4.5em; 
   padding-bottom: 2em;
   background-color: #0f7173;
@@ -302,10 +302,9 @@ a.back-to-top {
 /***************** About Me *****************/
 .get-in-touch {
   max-width: 100%;
-  display: block;
   letter-spacing: 2px;
-  padding-top: 7em;
-  padding-bottom:  35em;
+  padding-top: 9em;
+  min-height: 40em;
 }
 
 
