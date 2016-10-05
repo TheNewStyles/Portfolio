@@ -91,6 +91,21 @@ footer hr {
   font-weight: 400;
 }
 
+button {
+  background-color: #3aafb9;
+  border: 1px solid #3aafb9;
+  border-radius: 2%;
+}
+
+button a {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2em;
+}
+
+button a div{
+  padding: 7px;
+}
 
 @media screen and (max-width: 800px) {
 
@@ -195,7 +210,6 @@ footer hr {
     text-align: left;
   }
 }
-
 
 /*------------------- Education Block -------------------*/
 .education {
