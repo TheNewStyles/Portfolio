@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>    
+    <!--
+    *************************************
+    Hello there. 
+    
+      ___       ___       ___       ___       ___        
+     /\  \     /\__\     /\__\     /\  \     /\  \       
+     \:\  \   |::L__L   /:/  /    /::\  \   /::\  \      
+     /::\__\  |:::\__\ /:/__/    /::\:\__\ /::\:\__\     
+    /:/\/__/  /:;;/__/ \:\  \    \:\:\/  / \;:::/  /     
+    \/__/     \/__/     \:\__\    \:\/  /   |:\/__/      
+                         \/__/     \/__/     \|__|       
+
+
+    Mail: tyler.peterson@utah.edu
+      Telefon: 435-790-9724
+      
+    Web:   github.io/thenewstyles
+            
+    *************************************
+    -->
 
   <meta charset="utf-8" />
   <title>Tyler Peterson's Portfolio</title> 
@@ -16,31 +36,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- dev icons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
   <!-- bootstrap -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
-  
+  <!--[if lt IE 9]>
+  <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
-<!--
-  *************************************
-  Hello there. 
-  
-    ___       ___       ___       ___       ___        
-   /\  \     /\__\     /\__\     /\  \     /\  \       
-   \:\  \   |::L__L   /:/  /    /::\  \   /::\  \      
-   /::\__\  |:::\__\ /:/__/    /::\:\__\ /::\:\__\     
-  /:/\/__/  /:;;/__/ \:\  \    \:\:\/  / \;:::/  /     
-  \/__/     \/__/     \:\__\    \:\/  /   |:\/__/      
-                       \/__/     \/__/     \|__|       
 
-
-  Mail: tyler.peterson@utah.edu
-    Telefon: 435-790-9724
-    
-  Web:   github.io/thenewstyles
-          
-  *************************************
-  -->
 
 
 
@@ -62,11 +67,26 @@
 <!-- End of Nav --> 
 
     <header>
-      <img  class="col-xs-12 col-lg-6 col-lg-offset-3" src="images/logos/logo-02.png" alt="Tyler Peterson's logo">
+
+          <article class="page-title">
+            <h1>Tyler Peterson</h1>
+            <p>Designer & Developer</p>
+          </article>
+
+          <img  src="images/logos/logo-02.png" alt="Tyler Peterson's logo">
+
+          <div class="mouse-scroll" href="#"> 
+            <span class="mouse">
+              <span class="mouse-movement"> 
+              </span>
+            </span>
+            <span class="mouse-message fadeIn"></span> 
+          </div>      
+       
     </header>         
 
       <div class="wrap">        
-        <div class="inner-wrap row"> 
+        <!-- <div class="inner-wrap row">  -->
             
           <!-- Back To Top Button -->    
           <a href="#" class="back-to-top"><div class="fa fa-arrow-up fa-3x"></div></a>   
@@ -78,7 +98,7 @@
            <div class="row"> 
 
              <!-- resume link -->
-             <div class="col-lg-2 col-lg-offset-1 col-md-4 col-sm-6">
+             <div class="col-lg-2 col-lg-offset-3 col-md-4 col-sm-6">
               <div class="logo-container"> 
                 <a  href="projects/resume/resume.html">
                  <figure>
@@ -114,7 +134,7 @@
              </div>  
 
             <!-- Twitch tv stream -->              
-               <div class="col-lg-2 col-md-4 col-sm-6">
+               <div class="col-lg-2 col-lg-offset-3 col-md-4 col-sm-6">
                  <div class="logo-container">
                    <a href="projects/twitchtv/twitch-index.html"> 
                     <figure>
@@ -138,7 +158,7 @@
              </div> 
 
             <!-- spaceshooter game -->
-             <div class="col-lg-2 col-lg-offset-1 col-md-4 col-sm-6">
+             <div class="col-lg-2 col-md-4 col-sm-6">
                <div class="logo-container">
                  <a href="projects/spacegame/SpaceShooter.html">
                   <figure>
@@ -150,7 +170,7 @@
              </div>   
 
             <!-- brickbreaker game -->
-             <div class="col-lg-2  col-md-4 col-sm-6">
+             <div class="col-lg-2 col-lg-offset-3 col-md-4 col-sm-6">
                <div class="logo-container">
                  <a href="projects/brickbreaker/BrickBreaker.html"> 
                   <figure>
@@ -187,7 +207,7 @@
 
 
                <!-- coming soon -->              
-               <div class="col-lg-2 col-md-4 col-sm-6">
+<!--                <div class="col-lg-2 col-md-4 col-sm-6">
                  <div class="logo-container">
                    <a href="#"> 
                     <figure>
@@ -197,15 +217,15 @@
                    </a> 
                  </div>
                </div>                           
-             </div>              
+             </div>  -->             
           </section> <!-- End portfolio projects-->     
 
 
         
           <!-- Start of skill icons -->
-          <section class="skillIcons">
+          <section class="skill-icons">
             <h2>SKILLS AND TOOLS:</h2>
-            <div class="row skillsIconRows">
+            <div class="row skills-icon-rows">
               <div class="col-lg-3 col-sm-6 col-xs-6">
                 <i class="devicon-jquery-plain-wordmark"></i>
               </div>
@@ -248,12 +268,12 @@
          
 
           <!-- contact / about / social -->
-          <section class="get-in-touch">
+          <section class="about-me">
             <!--  About  -->          
               <div class="col-lg-8 col-lg-offset-2">
-              <h3 id="contact">ABOUT ME</h3>
+              <h2 id="contact">ABOUT ME</h2>
                 <p>
-                My name is Tyler Peterson and I live in Chicago. I got started in Software as a intern tester my senior year at The University Of Utah where I graduated in Information Systems. I still work full time as QA but I have a passion for development and I enjoy learning about UI/UX and design. The fastest way to get in contact with me is through email. I will try to respond within 24 hours. 
+                My name is Tyler Peterson and I live in Chicago. I got started in Software as a intern my senior year at The University Of Utah where I graduated in Information Systems. I still work full time as QA but I have a passion for development and I enjoy learning about UI/UX and design. The fastest way to get in contact with me is through email. I will try to respond within 24 hours. 
                 </p> 
                 <br>
                 <h3>tyler.peterson@utah.edu</h3>
@@ -299,7 +319,7 @@
               </div>
             </footer> <!--  end footer   --> 
 
-         </div> <!-- end inner-wrap -->         
+  <!--        </div> --> <!-- end inner-wrap -->         
       </div><!-- end wrap -->   
 
 
