@@ -1,10 +1,10 @@
 html{
-  background: #e7ecef; 
+  background: #fff; 
   height: 100%;
 }
 
 body {
-  background: #e7ecef; 
+  background: #fff; 
   text-align: center; 
 }
 
@@ -54,6 +54,18 @@ img {
   padding-top: 20px;
 }
 
+.section-header{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 5em;
+  letter-spacing: 2px;
+  color: #f05d5e;
+  background-color: #fff;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  cursor: pointer;
+}
+
 /***************** Header img and personal logo *****************/
 
 header {
@@ -69,7 +81,7 @@ header {
   margin-left: auto; 
 
   background: linear-gradient(177deg, #0f7173, #f05d5e);
-  background-size: 100% 100vh;
+  background-size: 400% 400%;
 
   -webkit-animation: header 30s ease infinite;
   -moz-animation: header 30s ease infinite;
@@ -242,16 +254,18 @@ header img {
 
 /***************** Portfolio logos *****************/
 .portfolio-logos {
-  min-height: 100vh;
-  padding-top: 9em;
   padding-bottom: 9em;
   font-family: 'Oswald', sans-serif;
+  background-color: rgba(255,255,255,0.95);
+  display: none;
+  overflow: hidden; 
 }
 
 .portfolio-logos h2 {
   padding-bottom: 2.5em;
-  font-size: 3.5em;
+  font-size: 5em;
   letter-spacing: 2px;
+  color: #0f7173;
 }
 
 .logo-container:hover a {
@@ -267,7 +281,9 @@ header img {
 }
 
 .logo-container figcaption p{
-    min-height: 89px;
+    min-height: 150px;
+    font-size: 2em;
+    color:  rgba(20,41,62,0.95);
 }
 
 .logo-container figure {     
@@ -342,23 +358,26 @@ a:focus{
 /***************** Skill icon section *****************/
 .skill-icons{
   font-size: 7em;
-  color: #272932;
+  color: #fff;
   background-color: #0f7173;
-  min-height: 100vh;
-  padding-top: 1em;
   padding-bottom: .75em;
   font-family: 'Oswald', sans-serif;
   line-height: 1.95em;
+  display: none;
+  overflow: hidden;
 }
 
-.skills-icon-rows {
-  margin-top: .65em;
-}
+
 
 .skill-icons h2{
   padding-bottom: 1em;
   font-size: 55px;
   letter-spacing: 2px;
+  color: #f05d5e;
+}
+
+#skills {
+  background-color: #0f7173; 
 }
 
 /***************** About Me *****************/
@@ -380,14 +399,14 @@ a:focus{
   padding-bottom: 10%;
   min-height: 100vh;
   font-family: 'Oswald', sans-serif;
-  background-color: #f05d5e;
+  background-color: rgba(255,255,255,0.95);
   z-index: 9999;
 }
 
 .split-div {
   padding-left: 0px !important;
   padding-right: 0px !important;
-    background-image: url("images/main-background.jpg");
+  background-image: url("images/main-background.jpg");
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -400,6 +419,7 @@ a:focus{
   padding-bottom: 1.5em;
   font-size: 3.5em;
   letter-spacing: 2px;
+  color: #f05d5e;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -421,10 +441,21 @@ a:focus{
   padding-bottom: 10%;
   min-height: 100vh;
   font-family: 'Oswald', sans-serif;
-  background-color: #f05d5e;
+  background-color: rgba(20,41,62,0.95);
   z-index: 9999;
+  color: #fff;
 }
 
+.place-holder div h2 {
+  padding-bottom: 1.5em;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  color: #f05d5e;
+}
+
+.place-holder p {
+  color: #fff;
+}
 
 /***************** footer *****************/
 
