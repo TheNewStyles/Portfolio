@@ -54,22 +54,14 @@ img {
   padding-top: 20px;
 }
 
-.top-margin {
+/* .top-margin {
   margin-top: 3em;
-}
+} */
 
 
 /***************** Header img and personal logo *****************/
 
 header {
-  background-color: #999;
-  background-image: url("images/main-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin-bottom: 4em;
   text-align: center;
   position: fixed;
@@ -80,7 +72,67 @@ header {
   max-width: 101%;
   margin-right: auto;
   margin-left: auto; 
+  
+  background: linear-gradient(177deg, #0f7173, #f05d5e);
+  background-size: 400% 400%;
+
+  -webkit-animation: header 30s ease infinite;
+  -moz-animation: header 30s ease infinite;
+  animation: header 30s ease infinite;
+
 }
+
+@-webkit-keyframes header {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes header {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes header { 
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+
+
+
+/*   background-color: #999; */
+/*   background-image: url("images/main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+
+/*   background-color: #f05d5e; */
+  
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+/*   background-image: url(fallback-gradient.svg); */
+  
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+ /*  background-image: -webkit-gradient(linear, left bottom, right bottom, from(#f05d5e), to(#0f7173)); */
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+/*   background-image: -webkit-linear-gradient(top, #f05d5e, #0f7173); */
+  
+  /* Firefox 3.6 - 15 */
+/*   background-image: -moz-linear-gradient(top, #f05d5e, #0f7173); */
+  
+  /* Opera 11.1 - 12 */
+/*   background-image: -o-linear-gradient(top, #f05d5e, #0f7173); */
+  
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+/*   background-image: linear-gradient(to top, #f05d5e, #0f7173);
+  margin: 0px;
+  overflow: hidden; */
+/* 
+
+} */
 
 header img {  
   top: 2em;
@@ -97,12 +149,23 @@ header img {
 
   .page-title h1{
     padding-top: 25%;
+    font-size: 4.5em;
   }
 
   header img {  
     max-height: 250px;
     max-width: 250px;
   }
+
+  .mouse-scroll{ 
+    margin-top: 1px;
+  }
+
+  .mouse{
+    position: absolute;
+    right: 45% !important;
+    top: 91% !important;
+  }  
 
 }
 
@@ -321,26 +384,38 @@ a:focus{
 .about-me {
   max-width: 100%;
   letter-spacing: 2px;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 10%;
   min-height: 100vh;
   font-family: 'Oswald', sans-serif;
 }
 
+.about-me div h2 {
+  padding-bottom: 1.5em;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+}
 
 /***************** Skill icon section *****************/
 .skill-icons{
   font-size: 7em;
   color: #272932;
-  background-color: #0f7173;
+  background-color: #f05d5e;
   min-height: 100vh;
-  padding-top: 1.75em;
-  padding-bottom: 1.75em;
+  padding-top: 1em;
+  padding-bottom: .75em;
   font-family: 'Oswald', sans-serif;
+  line-height: 1.95em;
 }
 
 .skills-icon-rows {
   margin-top: .65em;
+}
+
+.skill-icons h2{
+  padding-bottom: 1em;
+  font-size: 55px;
+  letter-spacing: 2px;
 }
 
 /***************** footer *****************/
@@ -355,10 +430,10 @@ footer {
   color: #e7ecef;
 }
 
-hr {    
+/* hr {    
   opacity: 0.5; 
   border-top: 1px solid #272932 !important; 
-}
+} */
 
 /***************** Nav menu *****************/
 
@@ -369,7 +444,8 @@ hr {
   z-index: 9999;
   width: 100%;
   height: 60px;
-  background-color: #272932;
+  background-color: #0f7173;
+  display: none;
 }
 
 .overlay {
