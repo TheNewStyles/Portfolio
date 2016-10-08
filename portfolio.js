@@ -1,7 +1,6 @@
-////////////////// Nav Menu  //////////////////
-
 var amountScrolled = 300;
 
+////////////////// Nav Menu  //////////////////
 function openNav(){
   document.getElementById("nav").style.height= "100%";
 }
@@ -19,6 +18,14 @@ $(window).scroll(function() {
     } else {
         $('.fixed-nav-bar').fadeOut('slow');
     }
+});
+
+$("#portfolio").click(function () {
+    $(".portfolio-logos").slideToggle('slow');
+});
+
+$("#skills").click(function () {
+    $(".skill-icons").slideToggle('slow');
 });
 
 ////////////////// Back to top button  //////////////////
@@ -42,4 +49,3 @@ $('a.back-to-top').click(function() {
 
 });
 
-////////////////// Three.js header background  //////////////////
