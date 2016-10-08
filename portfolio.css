@@ -54,11 +54,6 @@ img {
   padding-top: 20px;
 }
 
-/* .top-margin {
-  margin-top: 3em;
-} */
-
-
 /***************** Header img and personal logo *****************/
 
 header {
@@ -72,9 +67,9 @@ header {
   max-width: 101%;
   margin-right: auto;
   margin-left: auto; 
-  
+
   background: linear-gradient(177deg, #0f7173, #f05d5e);
-  background-size: 400% 400%;
+  background-size: 100% 100vh;
 
   -webkit-animation: header 30s ease infinite;
   -moz-animation: header 30s ease infinite;
@@ -98,42 +93,6 @@ header {
     100%{background-position:49% 0%}
 }
 
-
-
-/*   background-color: #999; */
-/*   background-image: url("images/main-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-
-/*   background-color: #f05d5e; */
-  
-  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
-/*   background-image: url(fallback-gradient.svg); */
-  
-  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
- /*  background-image: -webkit-gradient(linear, left bottom, right bottom, from(#f05d5e), to(#0f7173)); */
-  
-  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-/*   background-image: -webkit-linear-gradient(top, #f05d5e, #0f7173); */
-  
-  /* Firefox 3.6 - 15 */
-/*   background-image: -moz-linear-gradient(top, #f05d5e, #0f7173); */
-  
-  /* Opera 11.1 - 12 */
-/*   background-image: -o-linear-gradient(top, #f05d5e, #0f7173); */
-  
-  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-/*   background-image: linear-gradient(to top, #f05d5e, #0f7173);
-  margin: 0px;
-  overflow: hidden; */
-/* 
-
-} */
-
 header img {  
   top: 2em;
   max-height: 300px;
@@ -141,7 +100,6 @@ header img {
   margin-right: auto;
   margin-left: auto; 
 }
-
 
 /***************** Media queries for header imgs *****************/
 
@@ -380,27 +338,12 @@ a:focus{
   text-decoration: none;
 }
 
-/***************** About Me *****************/
-.about-me {
-  max-width: 100%;
-  letter-spacing: 2px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
-}
-
-.about-me div h2 {
-  padding-bottom: 1.5em;
-  font-size: 3.5em;
-  letter-spacing: 2px;
-}
 
 /***************** Skill icon section *****************/
 .skill-icons{
   font-size: 7em;
   color: #272932;
-  background-color: #f05d5e;
+  background-color: #0f7173;
   min-height: 100vh;
   padding-top: 1em;
   padding-bottom: .75em;
@@ -417,6 +360,71 @@ a:focus{
   font-size: 55px;
   letter-spacing: 2px;
 }
+
+/***************** About Me *****************/
+/* .split{
+  background-image: url("images/main-background.jpg");
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.about-me {
+  max-width: 50%;
+  float: left;
+  letter-spacing: 2px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f05d5e;
+  z-index: 9999;
+}
+
+.split-div {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+    background-image: url("images/main-background.jpg");
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-me div h2 {
+  padding-bottom: 1.5em;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .about-me {
+       min-width: 100%;
+    }
+    .place-holder{
+       min-width: 100%;
+    }
+
+}
+
+/***************** Placeholder section *****************/
+.place-holder {
+  max-width: 50%;
+  float: right;
+  letter-spacing: 2px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  min-height: 100vh;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f05d5e;
+  z-index: 9999;
+}
+
 
 /***************** footer *****************/
 
