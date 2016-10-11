@@ -33,6 +33,7 @@
     renderer.setSize(  aboutMeWidth, aboutMeHeight);
     container.appendChild( renderer.domElement );
     
+
     camera = new THREE.PerspectiveCamera(
     	75,
       window.innerWidth / window.innerHeight,
@@ -85,8 +86,8 @@
 
 	function onWindowResize() {
 
-  	windowHalfX = aboutMeWidth / 2;
-    windowHalfY = aboutMeHeight / 2;
+  	windowHalfX = window.innerWidth / 2;
+    windowHalfY = window.innerHeight / 2;
 
     camera.aspect = aboutMeWidth / aboutMeHeight;
     camera.updateProjectionMatrix();
@@ -138,7 +139,6 @@
     camera.position.x += ( mouseX - camera.position.x ) * .05;
     camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
     camera.lookAt( scene.position );
-
     renderer.render( scene, camera );
   
   }
