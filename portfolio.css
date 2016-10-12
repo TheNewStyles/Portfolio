@@ -81,7 +81,7 @@ header {
   
 
   background: linear-gradient(177deg, rgba(20,41,62,0.99), #f05d5e);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
 
   -webkit-animation: header 30s ease infinite;
   -moz-animation: header 30s ease infinite;
@@ -414,6 +414,7 @@ a:focus{
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 200;
 }
 
 .about-me div h2 {
