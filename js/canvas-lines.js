@@ -83,8 +83,8 @@
 
 	function onWindowResize() {
 
-  	windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
+  	windowHalfX = aboutMeWidth / 2;
+    windowHalfY = aboutMeHeight / 2;
 
     camera.aspect = aboutMeWidth / aboutMeHeight;
     camera.updateProjectionMatrix();
