@@ -74,11 +74,8 @@
     var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
     scene.add( line );
 
-    // mousey
-    
-    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-		document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-    document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+		// document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+  //   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 		
  		window.addEventListener( 'resize', onWindowResize, false );
 
@@ -96,32 +93,48 @@
 
 	}
 
-	function onDocumentMouseMove(event) {
+//mouse over split div to move lines
+ document.getElementById('split').addEventListener('mousemove', function(){
 
   	mouseX = event.clientX - windowHalfX;
     mouseY = event.clientY - windowHalfY;
 
-  }
+  });
 
-  function onDocumentTouchStart( event ) {
+  document.getElementById('split').addEventListener('touchstart', function(){
+  
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
 
-		if ( event.touches.length > 1 ) {
+  });
 
-      mouseX = event.touches[ 0 ].pageX - windowHalfX;
-      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+ document.getElementById('split').addEventListener('touchmove', function(){
+  
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
 
-    }
-	}
+  });
 
-  function onDocumentTouchMove( event ) {
 
-  	if ( event.touches.length == 1 ) {
+ //  function onDocumentTouchStart( event ) {
 
-      mouseX = event.touches[ 0 ].pageX - windowHalfX;
-      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+	// 	if ( event.touches.length > 1 ) {
 
-		}
-	}
+ //      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+ //      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+ //    }
+	// }
+
+ //  function onDocumentTouchMove( event ) {
+
+ //  	if ( event.touches.length == 1 ) {
+
+ //      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+ //      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+	// 	}
+	// }
 
 	function animate() {
     
