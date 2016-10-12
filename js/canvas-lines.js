@@ -103,15 +103,19 @@
 
   document.getElementById('split').addEventListener('touchstart', function(){
   
-    mouseX = event.clientX - windowHalfX;
-    mouseY = event.clientY - windowHalfY;
+    if ( event.touches.length > 1 ){
+      mouseX = event.clientX - windowHalfX;
+      mouseY = event.clientY - windowHalfY;
+    }
 
   });
 
  document.getElementById('split').addEventListener('touchmove', function(){
   
-    mouseX = event.clientX - windowHalfX;
-    mouseY = event.clientY - windowHalfY;
+    if ( event.touches.length > 1 ){
+      mouseX = event.clientX - windowHalfX;
+      mouseY = event.clientY - windowHalfY;
+    }
 
   });
 
