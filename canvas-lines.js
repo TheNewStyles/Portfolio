@@ -35,7 +35,7 @@
     
 
     camera = new THREE.PerspectiveCamera(
-    	75,
+    	25,
       window.innerWidth / window.innerHeight,
       1,
       10000
@@ -57,7 +57,7 @@
     
     var geometry = new THREE.Geometry();
 
-    for ( var i = 0; i < 100; i ++ ) {
+    for ( var i = 0; i < 50; i ++ ) {
       particle = new THREE.Sprite( material );
       particle.position.x = Math.random() * 2 - 1;
       particle.position.y = Math.random() * 2 - 1;
@@ -107,8 +107,6 @@
 
 		if ( event.touches.length > 1 ) {
 
-    	// event.preventDefault();
-
       mouseX = event.touches[ 0 ].pageX - windowHalfX;
       mouseY = event.touches[ 0 ].pageY - windowHalfY;
 
@@ -118,8 +116,6 @@
   function onDocumentTouchMove( event ) {
 
   	if ( event.touches.length == 1 ) {
-
-    	// event.preventDefault();
 
       mouseX = event.touches[ 0 ].pageX - windowHalfX;
       mouseY = event.touches[ 0 ].pageY - windowHalfY;
