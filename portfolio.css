@@ -458,7 +458,7 @@ a:focus{
 
 .threejs-image{
   position: absolute;
-  transform: translate(-50%, 65%);
+  transform: translate(-50%, 50%);
 }
 
 /***************** footer *****************/
