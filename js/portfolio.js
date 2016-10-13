@@ -14,10 +14,10 @@ function closeNav(){
 
 //fade in back to top button
 $(window).on('touchstart scroll',function() {
-    if ( $(window).scrollTop() > amountScrolledHeader-50) {
+    if ( $(window).scrollTop() > amountScrolledHeader-20) {
         $('header').fadeOut('slow');
     } else {
-        $('header').fadeIn('slow');
+        $('header').fadeIn('fast');
     }
 });
 
