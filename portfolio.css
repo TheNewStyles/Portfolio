@@ -1,6 +1,6 @@
 html{
   background: #fff; 
-  height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -112,6 +112,18 @@ header img {
   margin-right: auto;
   margin-left: auto; 
 }
+
+/***************** Extend to edges of screen *****************/
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 
 /***************** Media queries for header imgs *****************/
 
@@ -252,7 +264,7 @@ header img {
 }  
 
 
-/***************** Portfolio logos *****************/
+/***************** Projects *****************/
 .portfolio-logos {
   padding-bottom: 9em;
   padding-top: 5em;
@@ -307,17 +319,213 @@ header img {
   transform: scale(.9);
 }
 
-/***************** Extend to edges of screen *****************/
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/***************** Skill icon section *****************/
+.skill-icons{
+  font-size: 7em;
+  color: #e7ecef;
+  background-color: rgba(20,41,62,0.95);
+  padding-bottom: 1em;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.95em;
+  overflow: hidden;
 }
 
-.row{
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+#skills {
+  background-color: rgba(20,41,62,0.95);
+    padding-bottom: 2em;
 }
 
+.btn-icons{
+  visibility: hidden;
+}
+
+.wrapper-icons{
+  display: none;
+}
+
+@media only screen and (max-width : 768px) {
+    .skill-icons{
+      display: none;
+    }
+    .btn-icons{
+      visibility: visible;
+    }
+    .wrapper-icons {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      margin-right: 50%;
+      margin-left: auto;
+      padding-bottom: 5em;
+      display: block;
+    }
+    .btn-icons {
+      font-size: 15px;
+      -webkit-appearance: none;
+      border: none;
+      color: #f05d5e;
+      width: 5em;
+      height: 5em;
+      text-indent: -9999px;
+      background-color: transparent;
+      outline: none;
+    }
+
+    .btn-icons:before, .btn-icons:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 0.7em;
+      background-color: #f05d5e;
+      border-radius: 2em;
+      top: 45%;
+      transform: rotate(45deg);
+      transition: all .3s ease;
+    }
+
+    .btn-icons:before {
+      left: -1.55em;
+    }
+
+    .btn-icons:after {
+      transform: rotate(-45deg);
+      right: -1.55em;
+    }
+
+    .wrapper-icons .btn-icons.active, .wrapper-icons .btn-icons:active{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    div .btn-icons.focus,
+    div .btn-icons:focus,
+    div .btn-icons:active:focus,
+    div .btn-icons.active:focus, 
+    div .btn-icons.active.focus{
+      outline: none;
+    }
+
+    .btn-icons.active:before {
+      left: 0;
+
+    }
+
+    .btn-icons.active:after {
+      right: 0;
+    }
+}
+
+
+/***************** About Me *****************/
+.about-me {
+  max-width: 50%;
+  float: left;
+  letter-spacing: 2px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: 'Oswald', sans-serif;
+  background-color: rgba(255,255,255,0.95);
+  z-index: 9999;
+}
+
+.split-div {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-image: url("images/main-background.jpg");
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 200;
+}
+
+.about-me div {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.about-me div h1 {
+  font-size: 10rem;
+}
+
+.about-me div h2 {
+  font-size: 7rem;
+  letter-spacing: 2px;
+  color: #f05d5e;
+}
+
+.about-me div span {
+  text-align: left;
+  color: #f05d5e;
+  font-weight: 600;
+}
+
+
+
+@media only screen and (max-width : 1024px) {
+    .about-me {
+       min-width: 100%;
+    }
+    .about-me div{
+      font-size: 1.5rem;
+    }
+    div .threejs-holder{
+       min-width: 100%;
+    }
+    .about-me div h1 {
+      font-size: 7rem;
+    }
+    div .threejs-image{
+      position: absolute;
+      transform: translate(-50%, 30%);
+    }
+}
+
+/***************** threejs section *****************/
+.threejs-holder {
+  max-width: 50%;
+  max-height: 80vh;
+  min-width: 50%;
+  float: right;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+  background-color: rgba(20,41,62,0.90);
+  z-index: 9999;
+  color: #fff;
+}
+
+.threejs-holder div h2 {
+  padding-bottom: 1.5em;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  color: #f05d5e;
+}
+
+.threejs-holder p {
+  color: #fff;
+}
+
+.threejs-image{
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+
+/***************** footer *****************/
+
+footer {  
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 4.5em; 
+  padding-bottom: 2em;
+  background-color: rgba(20,41,62,0.999);
+  font-size: 15px;  
+  color: #e7ecef;
+  z-index: 300;
+}
 
 /***************** Social/Contact *****************/
 
@@ -354,129 +562,6 @@ a:focus{
   cursor: pointer;
   text-decoration: none;
 }
-
-
-/***************** Skill icon section *****************/
-.skill-icons{
-  font-size: 7em;
-  color: #e7ecef;
-  background-color: rgba(20,41,62,0.95);
-  padding-bottom: 1.75em;
-  font-family: 'Oswald', sans-serif;
-  line-height: 1.95em;
-/*   display: none; */
-  overflow: hidden;
-}
-
-
-
-.skill-icons h2{
-  padding-bottom: 1em;
-  font-size: 55px;
-  letter-spacing: 2px;
-  color: #e7ecef;
-}
-
-#skills {
-  background-color: rgba(20,41,62,0.95);
-}
-
-/***************** About Me *****************/
-/* .split{
-  background-image: url("images/main-background.jpg");
-  min-height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
-.about-me {
-  max-width: 50%;
-  float: left;
-  letter-spacing: 2px;
-  padding-top: 10%;
-  padding-bottom: 10%;
- /*  min-height: 100vh; */
-  font-family: 'Oswald', sans-serif;
-  background-color: rgba(255,255,255,0.95);
-  z-index: 9999;
-}
-
-.split-div {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  background-image: url("images/main-background.jpg");
-  min-height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 200;
-}
-
-.about-me div h2 {
-  padding-bottom: 1.5em;
-  font-size: 3.5em;
-  letter-spacing: 2px;
-  color: #f05d5e;
-}
-
-@media only screen and (max-width : 1024px) {
-    .about-me {
-       min-width: 100%;
-    }
-    div .place-holder{
-       min-width: 100%;
-    }
-}
-
-/***************** Placeholder section *****************/
-.place-holder {
-  max-width: 50%;
-  min-width: 50%;
-  float: right;
-  letter-spacing: 2px;
-  font-family: 'Oswald', sans-serif;
-  background-color: rgba(20,41,62,0.95);
-  z-index: 9999;
-  color: #fff;
-}
-
-.place-holder div h2 {
-  padding-bottom: 1.5em;
-  font-size: 3.5em;
-  letter-spacing: 2px;
-  color: #f05d5e;
-}
-
-.place-holder p {
-  color: #fff;
-}
-
-.threejs-image{
-  position: absolute;
-  transform: translate(-50%, 50%);
-}
-
-/***************** footer *****************/
-
-footer {  
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 4.5em; 
-  padding-bottom: 2em;
-  background-color: rgba(20,41,62,0.99);
-  font-size: 15px;  
-  color: #e7ecef;
-}
-
-/* hr {    
-  opacity: 0.5; 
-  border-top: 1px solid #272932 !important; 
-} */
 
 /***************** Nav menu *****************/
 
@@ -578,12 +663,9 @@ a.back-to-top {
   border-radius: 30px;
 }
 
-
-
 /***************** Open Close Button *****************/
 .wrapper {
   position: absolute;
-/*   top: 18%; */
   left: 50%;
   transform: translate(-50%, -99%);
   margin-right: 50%;
