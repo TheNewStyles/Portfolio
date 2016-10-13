@@ -20,24 +20,16 @@ $(document).ready(function(){
         }
     });
 
-    //////////expand collapse skills and projects
-    // $("#portfolio").click(function () {
-    //     $(".portfolio-logos").slideToggle('slow');
-    // });
-
-    // $("#skills").click(function () {
-    //     $(".skill-icons").slideToggle('slow');
-    // });
-
+    ////////// expand collapse projects ////////////
       $(".wrapper").click(function(){
         $('.btn').toggleClass( 'active');
         $(".portfolio-logos").slideToggle('slow');
       });
-
-      // $(".wrapper1").click(function(){
-      //   $('.btn').toggleClass( 'active');
-      //   $(".portfolio-logos").slideToggle('slow');
-      // });
+    ////////// expand collapse skills ////////////
+      $(".wrapper-icons").click(function(){
+        $('.btn-icons').toggleClass( 'active');
+        $(".skill-icons").slideToggle('slow');
+      });
     
 
     ////////////////// Back to top button  //////////////////
