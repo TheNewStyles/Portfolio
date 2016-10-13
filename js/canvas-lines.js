@@ -1,3 +1,5 @@
+  console.log('Hello there.\n  \nMail: tyler.peterson@utah.edu\nline Telephone: 435-790-9724\nWeb: github.io/thenewstyles');
+
   var mouseX = 0,
       mouseY = 0,
       windowHalfX = window.innerWidth / 2,
@@ -73,9 +75,6 @@
 
     var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
     scene.add( line );
-
-		// document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-  //   document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 		
  		window.addEventListener( 'resize', onWindowResize, false );
 
@@ -119,27 +118,6 @@
 
   });
 
-
- //  function onDocumentTouchStart( event ) {
-
-	// 	if ( event.touches.length > 1 ) {
-
- //      mouseX = event.touches[ 0 ].pageX - windowHalfX;
- //      mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
- //    }
-	// }
-
- //  function onDocumentTouchMove( event ) {
-
- //  	if ( event.touches.length == 1 ) {
-
- //      mouseX = event.touches[ 0 ].pageX - windowHalfX;
- //      mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
-	// 	}
-	// }
-
 	function animate() {
     
 		requestAnimationFrame( animate );
@@ -155,3 +133,6 @@
     renderer.render( scene, camera );
   
   }
+
+
+
