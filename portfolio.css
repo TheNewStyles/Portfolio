@@ -28,7 +28,7 @@ body {
   height: auto;
   position: relative;  
   z-index: 200;
-  top: 100vw;
+  top: 100vh;
   background-color: #e7ecef;
   margin-right: auto;
   margin-left: auto;
@@ -74,7 +74,7 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
-  min-height: 100vw;
+  min-height: 100vh;
   max-width: 101%;
   margin-right: auto;
   margin-left: auto; 
@@ -88,6 +88,12 @@ header {
   -moz-animation: header 30s ease infinite;
   animation: header 30s ease infinite;
 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    header{ 
+        background-attachment: scroll;
+    }
 }
 
 @-webkit-keyframes header {
@@ -435,7 +441,7 @@ header img {
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-image: url("images/main-background.jpg");
-  min-height: 100vw;
+  min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -489,7 +495,7 @@ header img {
 /***************** threejs section *****************/
 .threejs-holder {
   max-width: 50%;
-  max-height: 80vw;
+  max-height: 80vh;
   min-width: 50%;
   float: right;
   letter-spacing: 2px;
