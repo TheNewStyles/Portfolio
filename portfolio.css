@@ -28,7 +28,7 @@ body {
   height: auto;
   position: relative;  
   z-index: 200;
-  top: 100vh;
+  top: 100vw;
   background-color: #e7ecef;
   margin-right: auto;
   margin-left: auto;
@@ -74,7 +74,7 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
-  min-height: 100vh;
+  min-height: 100vw;
   max-width: 101%;
   margin-right: auto;
   margin-left: auto; 
@@ -435,7 +435,7 @@ header img {
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-image: url("images/main-background.jpg");
-  min-height: 100vh;
+  min-height: 100vw;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -489,7 +489,7 @@ header img {
 /***************** threejs section *****************/
 .threejs-holder {
   max-width: 50%;
-  max-height: 80vh;
+  max-height: 80vw;
   min-width: 50%;
   float: right;
   letter-spacing: 2px;
