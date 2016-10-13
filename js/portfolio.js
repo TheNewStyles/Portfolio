@@ -1,6 +1,5 @@
 var amountScrolled = 300;
 var amountScrolledHeader = $('header').height();
-console.log(amountScrolledHeader);
 
 ////////////////// Nav Menu  //////////////////
 function openNav(){
@@ -10,6 +9,17 @@ function openNav(){
 function closeNav(){
   document.getElementById("nav").style.height = "0%";
 }
+
+////////////////// header  //////////////////
+
+//fade in back to top button
+$(window).on('touchstart scroll',function() {
+    if ( $(window).scrollTop() > amountScrolledHeader-50) {
+        $('header').fadeOut('slow');
+    } else {
+        $('header').fadeIn('slow');
+    }
+});
 
 $(document).ready(function(){
 
@@ -52,17 +62,5 @@ $(document).ready(function(){
         }, 700);
         return false;
     });
-
-    ////////////////// header  //////////////////
-
-    //fade in back to top button
-    $(window).scroll(function() {
-        if ( $(window).scrollTop() < amountScrolledHeader - 50 ) {
-            $('header').fadeIn('slow');
-        } else {
-            $('header').fadeOut('slow');
-        }
-    });
-
 });
 
