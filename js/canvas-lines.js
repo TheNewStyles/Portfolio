@@ -15,9 +15,9 @@
 	function init() {
 
   	var container,
-        separation = 100,
-        amountX = 50,
-        amountY = 50,
+        separation = 200,
+        amountX = 10,
+        amountY = 10,
         particle;
     
     aboutMeHeight = document.getElementById('about-me').clientHeight;
@@ -104,29 +104,23 @@
   el.addEventListener('touchstart', function(){
   
     if ( event.touches.length > 1 ){
-      mouseX = event.clientX - windowHalfX;
-      mouseY = event.clientY - windowHalfY;
+      event.preventDefault();
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
     }
 
   });
 
  el.addEventListener('touchmove', function(){
   
-    if ( event.touches.length > 1 ){
-      mouseX = event.clientX - windowHalfX;
-      mouseY = event.clientY - windowHalfY;
+    if ( event.touches.length == 1 ){
+      event.preventDefault();
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
     }
 
   });
 
-  el.addEventListener('touchenter', function(){
-  
-    if ( event.touches.length > 1 ){
-      mouseX = event.clientX - windowHalfX;
-      mouseY = event.clientY - windowHalfY;
-    }
-
-  });
 
 	function animate() {
     
@@ -137,8 +131,8 @@
 
 	function render() {
 		
-    camera.position.x += ( mouseX - camera.position.x ) * .05;
-    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
+    camera.position.x += ( mouseX - camera.position.x ) * .01;
+    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .01;
     camera.lookAt( scene.position );
     renderer.render( scene, camera );
   
