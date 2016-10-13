@@ -75,12 +75,11 @@ header {
   left: 0;
   z-index: 2;
   min-height: 100vh;
-  max-width: 101%;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto; 
   will-change:top;
-  background-attachment: scroll;
-  
+
 
   background: linear-gradient(177deg, rgba(20,41,62,0.99), #f05d5e);
   background-size: 200% 200%;
@@ -91,11 +90,11 @@ header {
 
 }
 
-/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
     header{ 
         background-attachment: scroll;
     }
-} */
+}
 
 @-webkit-keyframes header {
     0%{background-position:49% 0%}
@@ -442,7 +441,7 @@ header img {
   padding-left: 0px !important;
   padding-right: 0px !important;
   background-image: url("images/main-background.jpg");
-  min-height: 100vh;
+  /* min-height: 100vh; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
