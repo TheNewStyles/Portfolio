@@ -487,10 +487,10 @@ header img {
     .about-me div h1 {
       font-size: 7rem;
     }
-    div .threejs-image{
+/*     div .threejs-image{
       position: absolute;
       transform: translate(-50%, 30%);
-    }
+    } */
 }
 
 /***************** threejs section *****************/
