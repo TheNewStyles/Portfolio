@@ -113,10 +113,21 @@
 
  el.addEventListener('touchmove', function(){
   
-    if ( event.touches.length == 1 ){
+    if ( event.touches.length > 1 ){
       event.preventDefault();
       mouseX = event.touches[ 0 ].pageX - windowHalfX;
       mouseY = event.touches[ 0 ].pageY - windowHalfY;
+    }
+
+  });
+
+
+  el.addEventListener('touchenter', function(){
+  
+    if ( event.touches.length > 1 ){
+      event.preventDefault();
+      mouseX = event.clientX - windowHalfX;
+      mouseY = event.clientY - windowHalfY;
     }
 
   });
