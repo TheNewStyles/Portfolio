@@ -2,8 +2,6 @@
 
   var mouseX = 0,
       mouseY = 0,
-      windowHalfX = window.innerWidth / 2,
-      windowHalfY = window.innerHeight / 2,
       SEPARATION = 200,
       AMOUNTX = 10,
       AMOUNTY = 10,
@@ -24,8 +22,9 @@
     
     aboutMeHeight = document.getElementById('about-me').clientHeight;
     aboutMeWidth = document.getElementById('about-me').clientWidth;
-    container = document.getElementById('threejs');
-    // container.clientHeight = aboutMeHeight;
+    container = document.getElementById('threejs');    
+    windowHalfX = aboutMeWidth / 2;
+    windowHalfY = aboutMeHeight / 2;
     innerContainer = document.createElement('div');
     container.appendChild(innerContainer);
 
@@ -92,15 +91,17 @@
 
 	}
 
+  var el = document.getElementById('split');
+
 //mouse over split div to move lines
- document.getElementById('split').addEventListener('mousemove', function(){
+ el.addEventListener('mousemove', function(){
 
   	mouseX = event.clientX - windowHalfX;
     mouseY = event.clientY - windowHalfY;
 
   });
 
-  document.getElementById('split').addEventListener('touchstart', function(){
+  el.addEventListener('touchstart', function(){
   
     if ( event.touches.length > 1 ){
       mouseX = event.clientX - windowHalfX;
@@ -109,7 +110,16 @@
 
   });
 
- document.getElementById('split').addEventListener('touchmove', function(){
+ el.addEventListener('touchmove', function(){
+  
+    if ( event.touches.length > 1 ){
+      mouseX = event.clientX - windowHalfX;
+      mouseY = event.clientY - windowHalfY;
+    }
+
+  });
+
+  el.addEventListener('touchenter', function(){
   
     if ( event.touches.length > 1 ){
       mouseX = event.clientX - windowHalfX;
