@@ -79,17 +79,21 @@ header {
   margin-left: auto; 
   background-attachment: scroll;
   overflow: hidden;
+  
+
+  background: -webkit-linear-gradient(273deg, rgba(20,41,62,0.99), #f05d5e);
+  
 
   background: linear-gradient(177deg, rgba(20,41,62,0.99), #f05d5e);
-  background-size: cover;
-  animation: header 30s ease infinite;
+  background-size: 200% 200%;
+  -webkit-animation: header 30s ease infinite;
+          animation: header 30s ease infinite;
 }
 
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    header{ 
-        background-attachment: scroll;
-    }
+@-webkit-keyframes header { 
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
 }
 
 @keyframes header { 
@@ -150,21 +154,48 @@ header img {
 
 /* // Animations */
 
-@keyframes scroll-ani {
+@-webkit-keyframes scroll-ani {
   0% {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     top: 29%;
   }
   15% {
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     top: 50%;
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     top: 50%;
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    top: 29%;
+  }
+}
+
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     top: 29%;
   }
 }
@@ -212,7 +243,8 @@ header img {
   margin: -4px 0 0 -4px;
   background: #FFF;
   border-radius: 50%;
-  animation: scroll-ani 4s linear infinite;
+  -webkit-animation: scroll-ani 4s linear infinite;
+          animation: scroll-ani 4s linear infinite;
 }  
 
 
@@ -243,6 +275,7 @@ header img {
 
 .logo-container:hover figcaption {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .logo-container figcaption p{
@@ -258,13 +291,15 @@ header img {
 
 .logo-container img {
   height: auto;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
   max-width: 100%; 
   max-height: 330px;
 }
 
 .logo-container:hover img {
-  transform: scale(.9);
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
 }
 
 /***************** Skill icon section *****************/
@@ -301,7 +336,8 @@ header img {
     .wrapper-icons {
       position: absolute;
       left: 50%;
-      transform: translate(-50%, -90%);
+      -webkit-transform: translate(-50%, -90%);
+              transform: translate(-50%, -90%);
       margin-right: 50%;
       margin-left: auto;
       padding-bottom: 5em;
@@ -328,7 +364,9 @@ header img {
       background-color: #f05d5e;
       border-radius: 2em;
       top: 45%;
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transition: all .3s ease;
       transition: all .3s ease;
     }
 
@@ -337,7 +375,8 @@ header img {
     }
 
     .btn-icons:after {
-      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
       right: -1.55em;
     }
 
@@ -388,14 +427,17 @@ header img {
 
 .about-me div {
   text-align: left;
+  font-size: 32px;
   font-size: 2rem;
 }
 
 .about-me div h1 {
+  font-size: 160px;
   font-size: 10rem;
 }
 
 .about-me div h2 {
+  font-size: 112px;
   font-size: 7rem;
   letter-spacing: 2px;
   color: #f05d5e;
@@ -456,6 +498,7 @@ header img {
 .threejs-image{
   position: absolute;
   transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
 }
 
 /***************** footer *****************/
@@ -485,6 +528,7 @@ footer {
   border-radius: 50%;
   background: #f05d5e;
   overflow: hidden;
+  -webkit-transition: color .3s;
   transition: color .3s;
   margin-bottom: 30px; 
 }
@@ -529,7 +573,9 @@ a:focus{
   top: 0;
   background-color: #272932;
   opacity: 0.98;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
   overflow: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -547,6 +593,7 @@ a:focus{
   font-size: 36px;
   color: #e7ecef;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -609,7 +656,8 @@ a.back-to-top {
 .wrapper {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -99%);
+  -webkit-transform: translate(-50%, -99%);
+          transform: translate(-50%, -99%);
   margin-right: 50%;
   margin-left: auto;
   padding-bottom: 5em;
@@ -636,7 +684,9 @@ a.back-to-top {
   background-color: #f05d5e;
   border-radius: 2em;
   top: 45%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -645,7 +695,8 @@ a.back-to-top {
 }
 
 .btn:after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   right: -1.55em;
 }
 
