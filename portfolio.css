@@ -561,7 +561,7 @@ a:focus{
   height: 60px;
   background-color: rgba(20,41,62,0.90);
   display: none;
-  -webkit-transform: translateZ(0);
+/*   -webkit-transform: translateZ(0); */
 }
 
 .overlay {
