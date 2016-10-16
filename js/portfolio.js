@@ -12,7 +12,7 @@ function closeNav(){
 
 ////////////////// header  //////////////////
 
-// //fade in back to top button
+//fade in back to top button
 // $(window).on('touchstart scroll',function() {
 //     if ( $(window).scrollTop() > amountScrolledHeader-20) {
 //         $('header').fadeOut('slow');
@@ -21,16 +21,16 @@ function closeNav(){
 //     }
 // });
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//     //fade in Nav bar
-//     $(window).scroll(function() {
-//         if ( $(window).scrollTop() > amountScrolled ) {
-//             $('.fixed-nav-bar').fadeIn('slow');
-//         } else {
-//             $('.fixed-nav-bar').fadeOut('slow');
-//         }
-//     });
+    //fade in Nav bar
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('.fixed-nav-bar').fadeIn('slow');
+        } else {
+            $('.fixed-nav-bar').fadeOut('slow');
+        }
+    });
 
     ////////// expand collapse projects ////////////
       $(".wrapper").click(function(){
