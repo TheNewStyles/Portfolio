@@ -1,27 +1,19 @@
 var amountScrolled = 300;
 var amountScrolledHeader = $('header').height();
 
-////////////////// Nav Menu  //////////////////
-function openNav(){
-  document.getElementById("nav").style.height= "100%";
-}
-
-function closeNav(){
-  document.getElementById("nav").style.height = "0%";
-}
-
-////////////////// header  //////////////////
-
-//fade in back to top button
-// $(window).on('touchstart scroll',function() {
-//     if ( $(window).scrollTop() > amountScrolledHeader-20) {
-//         $('header').fadeOut('slow');
-//     } else {
-//         $('header').fadeIn('fast');
-//     }
-// });
+////////////////// nav menu  //////////////////
 
 $(document).ready(function(){
+    $windowHeight = $(window).height();
+
+    //open/close nav
+    $('#hamburger').click(function(){
+        $('#nav').animate({height:$windowHeight},200);
+        $('.closebtn').fadeIn('slow');
+    });
+    $('.closebtn, #home-menu, #contact-menu, #projects-menu').click(function(){
+        $('#nav').animate({height:0},200);
+    });
 
     //fade in Nav bar
     $(window).scroll(function() {
@@ -32,7 +24,28 @@ $(document).ready(function(){
         }
     });
 
-    ////////// expand collapse projects ////////////
+    //scroll within page on menu click
+   $('#home-menu').click(function(e){
+       e.preventDefault();       
+       $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+   });
+   $('#projects-menu').click(function(e){
+       e.preventDefault();       
+       $('html, body').animate({
+            scrollTop: $('#portfolio').offset().top
+        }, 1000);
+   });
+   $('#contact-menu').click(function(e){
+       e.preventDefault();       
+       $('html, body').animate({
+            scrollTop: $('#about-me').offset().top
+        }, 1000);
+   });
+
+
+////////// expand collapse projects ////////////
       $(".wrapper").click(function(){
         $('.btn').toggleClass( 'active');
         $(".portfolio-logos").slideToggle('slow');
@@ -44,7 +57,7 @@ $(document).ready(function(){
       });
     
 
-    ////////////////// Back to top button  //////////////////
+////////////////// Back to top button  //////////////////
 
     //fade in back to top button
     $(window).scroll(function() {
