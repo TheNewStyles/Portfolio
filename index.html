@@ -50,14 +50,13 @@
 
 <!-- Nav Menu   -->
     <nav class="fixed-nav-bar">    
-      <span id="hamburger" class="fa fa-bars fa-3x col-md-1 col-md-offset-11 col-xs-3 col-xs-offset-9" onclick="openNav()"></span>  
+      <span id="hamburger" class="fa fa-bars fa-3x col-md-1 col-md-offset-11 col-xs-3 col-xs-offset-9"></span>  
       <div id="nav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="closebtn">&times;</a>
         <div class="overlay-content">
-          <a href="index.html" onclick="closeNav()">Home</a>
-          <a href="index.html#contact" onclick="closeNav()">Contact</a>
-          <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
-          <a href="projects/resume/resume.html" onclick="closeNav()">Resume</a>
+          <a id="home-menu">HOME</a>
+          <a id="projects-menu">PROJECTS</a> 
+          <a id="contact-menu">CONTACT</a>                   
         </div>
       </div>
     </nav>
@@ -290,7 +289,7 @@
             </div>    
           <!--  end social   -->            
           <div>
-          This website is hand-crafted, artisanal, bespoke, purposeful, and made with ❤ in Chicago. 
+          Made with ❤ in Chicago. 
           <br>
           <i class="fa fa-copyright"></i>              
           Tyler Peterson All Rights Reserved
