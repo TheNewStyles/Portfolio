@@ -1,11 +1,15 @@
 var amountScrolled = 300;
 var amountScrolledHeader = $('header').height();
-
-////////////////// nav menu  //////////////////
+var $windowHeight = $(window).height();
 
 $(document).ready(function(){
-    $windowHeight = $(window).height();
+    
+    //make html,body,container all the same size. Prevent resize bug in mobile
+    $("html, body, .container-fluid").css({
+        height: $windowHeight
+    });    
 
+    ////////////////// nav menu  //////////////////
     //open/close nav
     $('#hamburger').click(function(){
         $('#nav').animate({height:$windowHeight},200);
