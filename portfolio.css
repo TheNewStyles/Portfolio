@@ -580,18 +580,17 @@ a:focus{
 }
 
 .overlay-content {
-  position: relative;
-  top: 35%;
+  position: absolute;
+  top: 30%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
   cursor: pointer;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 50px;
   color: #e7ecef;
   display: block;
   -webkit-transition: 0.3s;
@@ -600,6 +599,7 @@ a:focus{
 
 .overlay a:hover, .overlay a:focus {
   color: #f05d5e;
+  text-decoration: none;
 }
 
 .overlay .closebtn {
