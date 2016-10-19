@@ -71,8 +71,9 @@ header {
   right: 0;
   left: 0;
   z-index: 1;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 800px;
+/*   min-height: 100vh;
+  max-height: 100vh; */
   margin-right: auto;
   margin-left: auto; 
   background-size: cover;
