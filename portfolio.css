@@ -56,10 +56,10 @@ header {
   top: 1px;
   height: 100vh;
   background-color: black;
-  transition: height 1000000s ease;
+/*   transition: height 1000000s ease;
   -webkit-transition: height 1000000s ease;
   -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease; */
 
 /*   margin-bottom: 4em;
   text-align: center;
