@@ -1,6 +1,7 @@
 html, body{
   background: #fff; 
-  font-size: 16px;  
+  font-size: 16px;
+  height: 100%;
   text-align: center; 
 }
 
@@ -14,10 +15,21 @@ html, body{
 .page-title h1 {
   font-size: 5.5em;
   letter-spacing: 3px;
-  padding-top: 10%;
+  padding-top: 15%;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Oswald', sans-serif;
+}
+
+.wrap {  
+  height: auto;
+  position: relative;  
+  z-index: 200;
+  top: 100vh;
+  background-color: #e7ecef;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 100%;  
 }
 
 h1, h2, h3 {
@@ -53,15 +65,7 @@ img {
 /***************** Header img and personal logo *****************/
 
 header {
-  top: 1px;
-  height: 100vh;
-  background-color: black;
-/*   transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
-  -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease; */
-
-/*   margin-bottom: 4em;
+  margin-bottom: 4em;
   text-align: center;
   position: fixed;
   right: 0;
@@ -74,7 +78,6 @@ header {
   background-size: cover;
   will-change: transform; 
   -webkit-transform: translateZ(0); 
-  */
 
   background: -webkit-linear-gradient(273deg, rgba(20,41,62,0.99), #f05d5e);
   
@@ -94,7 +97,7 @@ header {
     0%{background-position:49% 0%}
     50%{background-position:52% 100%}
     100%{background-position:49% 0%}
-} 
+}
 
 header img {  
 /*   top: 10%; */
@@ -215,8 +218,8 @@ header img {
 /*   // The Mouse */
 .mouse {
   position: absolute;
-  right: 49%;
-  top: 92%;
+  right: 49.10%;
+  top: 93%;
   display: block;
   width: 30px;
   height: 45px;
@@ -244,11 +247,11 @@ header img {
 
 /***************** Projects *****************/
 .portfolio-logos {
-  padding-bottom: .5em;
-  padding-top: 1em;
+  padding-bottom: 9em;
+  padding-top: 5em;
   font-family: 'Oswald', sans-serif;
   background-color: rgba(255,255,255,0.95);
-/*   display: none; */
+  display: none;
   overflow: hidden; 
 }
 
@@ -309,17 +312,7 @@ header img {
 
 #skills {
   background-color: rgba(20,41,62,0.95);
-  padding-bottom: 2em;
-}
-
-/* Expand collapse buttons */
-
-.wrapper{
-  display:  none;
-}
-
-.btn{
-  visibility: hidden;
+    padding-bottom: 2em;
 }
 
 .btn-icons{
@@ -331,83 +324,6 @@ header img {
 }
 
 @media only screen and (max-width : 768px) {
-    /* Portfolio buttons */
-    .portfolio-logos{
-      display: none;
-    }
-    .btn{
-      visibility: visible;
-    }
-    .wrapper {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%, -90%);
-              transform: translate(-50%, -90%);
-      margin-right: 50%;
-      margin-left: auto;
-      padding-bottom: 5em;
-      display: block;
-    }
-
-    .btn {
-      font-size: 15px;
-      -webkit-appearance: none;
-      border: none;
-      color: #f05d5e;
-      width: 5em;
-      height: 5em;
-      text-indent: -9999px;
-      background-color: transparent;
-      outline: none;
-    }
-
-    .btn:before, .btn:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 0.7em;
-      background-color: #f05d5e;
-      border-radius: 2em;
-      top: 45%;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease;
-    }
-
-    .btn:before {
-      left: -1.55em;
-    }
-
-    .btn:after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      right: -1.55em;
-    }
-
-    .wrapper .btn.active, .wrapper .btn:active{
-      box-shadow: none;
-    }
-
-    div .btn.focus,
-    div .btn:focus,
-    div .btn:active:focus,
-    div .btn.active:focus, 
-    div .btn.active.focus{
-      outline: none;
-    }
-
-    .btn.active:before {
-      left: 0;
-
-    }
-
-    .btn.active:after {
-      right: 0;
-    }
-
-    /* Skills buttons */
     .skill-icons{
       display: none;
     }
@@ -483,18 +399,6 @@ header img {
     }
 }
 
-/*****************  Split div *****************/
-.split-div {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  background-image: url("images/main-background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 200;
-  overflow: hidden;
-  -webkit-transform: translateZ(0);
-}
-
 
 /***************** About Me *****************/
 .about-me {
@@ -502,14 +406,22 @@ header img {
   float: left;
   letter-spacing: 1.15px;
   padding-top: 10%;
-  height: 75vh;
   padding-bottom: 10%;
   font-family: 'Oswald', sans-serif;
   background-color: rgba(255,255,255,0.95);
   z-index: 9999;
 }
 
-
+.split-div {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-image: url("images/main-background.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  z-index: 200;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+}
 
 .about-me div {
   text-align: left;
@@ -550,26 +462,27 @@ header img {
     .about-me div h1 {
       font-size: 7rem;
     }
-/*     div .threejs-image{
+    div .threejs-image{
       position: absolute;
       transform: translate(-50%, 30%);
-    } */
+    }
 }
 
 /***************** threejs section *****************/
 .threejs-holder {
   max-width: 50%;
+  max-height: 800px;
   min-width: 50%;
-  height: 75vh;
   float: right;
   letter-spacing: 2px;
   font-family: 'Oswald', sans-serif;
   background-color: rgba(20,41,62,0.90);
   z-index: 9999;
   color: #fff;
+  overflow: hidden;
 }
 
-/* .threejs-holder div h2 {
+.threejs-holder div h2 {
   padding-bottom: 1.5em;
   font-size: 3.5em;
   letter-spacing: 2px;
@@ -579,11 +492,12 @@ header img {
 .threejs-holder p {
   color: #fff;
 }
- */
+
 .threejs-image{
   position: absolute;
-  transform: translate(-50%, 30%);
-  -webkit-transform: translate(-50%, 30%);
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -webkit-overflow-scrolling: touch;
 }
 
 /***************** footer *****************/
@@ -741,5 +655,72 @@ a.back-to-top {
 }
 
 /***************** Open Close Button *****************/
+.wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate(-50%, -99%);
+          transform: translate(-50%, -99%);
+  margin-right: 50%;
+  margin-left: auto;
+  padding-bottom: 5em;
+}
 
+.btn {
+  font-size: 15px;
+  -webkit-appearance: none;
+  border: none;
+  color: #f05d5e;
+  width: 5em;
+  height: 5em;
+  text-indent: -9999px;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn:before, .btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.7em;
+  background-color: #f05d5e;
+  border-radius: 2em;
+  top: 45%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.btn:before {
+  left: -1.55em;
+}
+
+.btn:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: -1.55em;
+}
+
+.wrapper .btn.active, .wrapper .btn:active{
+  box-shadow: none;
+}
+
+div .btn.focus,
+div .btn:focus,
+div .btn:active:focus,
+div .btn.active:focus, 
+div .btn.active.focus{
+  outline: none;
+}
+
+.btn.active:before {
+  left: 0;
+
+}
+
+.btn.active:after {
+  right: 0;
+}
 
