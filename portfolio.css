@@ -64,7 +64,7 @@ img {
 /***************** Header img and personal logo *****************/
 
 header {
-  height: 500px;
+  height: 100vh;
   background-color: black;
 
 /*   margin-bottom: 4em;
