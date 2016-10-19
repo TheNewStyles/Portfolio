@@ -204,7 +204,10 @@ header img {
   font-weight: normal;
   color: #7F8C8D;
   color: #FFF;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
   margin-top: 8%;
+  text-decoration: none;
   overflow: hidden;
   width: 100%;
 }
@@ -221,10 +224,6 @@ header img {
   box-sizing: border-box;
   border: 3px solid #FFF;
   border-radius: 23px;
-  transition: top 1000000s ease;
-  -webkit-transition: top 1000000s ease;
-  -moz-transition: top 1000000s ease;
-  -o-transition: top 1000000s ease;
 }
   
 /*     // Scroll Indicator */
@@ -484,6 +483,18 @@ header img {
     }
 }
 
+/*****************  Split div *****************/
+.split-div {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-image: url("images/main-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 200;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+}
+
 
 /***************** About Me *****************/
 .about-me {
@@ -498,16 +509,7 @@ header img {
   z-index: 9999;
 }
 
-.split-div {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  background-image: url("images/main-background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 200;
-  overflow: hidden;
-  -webkit-transform: translateZ(0);
-}
+
 
 .about-me div {
   text-align: left;
@@ -565,10 +567,6 @@ header img {
   background-color: rgba(20,41,62,0.90);
   z-index: 9999;
   color: #fff;
-  transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
-  -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease;
 }
 
 /* .threejs-holder div h2 {
@@ -584,8 +582,8 @@ header img {
  */
 .threejs-image{
   position: absolute;
-  transform: translate(-50%, 50%);
-  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 30%);
+  -webkit-transform: translate(-50%, 30%);
 }
 
 /***************** footer *****************/
