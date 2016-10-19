@@ -1,3 +1,5 @@
+window.scrollTo(0,1);
+
 $(document).ready(function(){
 
     var amountScrolled = 300;
