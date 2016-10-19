@@ -1,14 +1,13 @@
+var amountScrolled = 300;
+var amountScrolledHeader = $('header').height();
+var $windowHeight = $(window).height();
+
 $(document).ready(function(){
-
-    var amountScrolled = 300;
-    var amountScrolledHeader = $('header').height();
-    var $windowHeight = $(window).height();
-
-    var bg = $('header, .about-me, .threejs-holder');
-    $(window).resize(function() {
-        bg.height($(window).height() + 60);
-    });
     
+    //make html,body,container all the same size. Prevent resize bug in mobile
+    $("html, body, .container-fluid").css({
+        height: $windowHeight
+    });    
 
     ////////////////// nav menu  //////////////////
     //open/close nav
@@ -80,6 +79,5 @@ $(document).ready(function(){
         }, 700);
         return false;
     });
-
 });
 
