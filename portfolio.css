@@ -221,10 +221,10 @@ header img {
   box-sizing: border-box;
   border: 3px solid #FFF;
   border-radius: 23px;
-  transition: height 1000000s ease;
-  -webkit-transition: height 1000000s ease;
-  -moz-transition: height 1000000s ease;
-  -o-transition: height 1000000s ease;
+  transition: top 1000000s ease;
+  -webkit-transition: top 1000000s ease;
+  -moz-transition: top 1000000s ease;
+  -o-transition: top 1000000s ease;
 }
   
 /*     // Scroll Indicator */
