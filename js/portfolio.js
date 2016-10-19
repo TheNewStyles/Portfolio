@@ -4,7 +4,7 @@ $(document).ready(function(){
     var amountScrolledHeader = $('header').height();
     var $windowHeight = $(window).height();
 
-    var bg = $('header');
+    var bg = $('header, .about-me, .threejs-holder');
     $(window).resize(function() {
         bg.height($(window).height() + 60);
     });
