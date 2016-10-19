@@ -4,6 +4,12 @@ $(document).ready(function(){
     var amountScrolledHeader = $('header').height();
     var $windowHeight = $(window).height();
 
+    var bg = $('header');
+    $(window).resize(function() {
+        bg.height($(window).height() + 60);
+    });
+    
+
     ////////////////// nav menu  //////////////////
     //open/close nav
     $('#hamburger').click(function(){
