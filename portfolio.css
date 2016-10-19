@@ -24,8 +24,7 @@ html, body{
   height: auto;
   position: relative;  
   z-index: 200;
-/*   top: 100vh; */
-  top: 800px;
+  top: 100vh;
   background-color: #e7ecef;
   margin-right: auto;
   margin-left: auto;
@@ -71,9 +70,8 @@ header {
   right: 0;
   left: 0;
   z-index: 1;
-  height: 800px;
-/*   min-height: 100vh;
-  max-height: 100vh; */
+  min-height: 100vh;
+  max-height: 100vh;
   margin-right: auto;
   margin-left: auto; 
   background-size: cover;
