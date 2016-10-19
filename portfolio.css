@@ -565,6 +565,10 @@ header img {
   background-color: rgba(20,41,62,0.90);
   z-index: 9999;
   color: #fff;
+  transition: height 1000000s ease;
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
 }
 
 /* .threejs-holder div h2 {
