@@ -104,7 +104,7 @@ $(document).ready(function(){
         }
     };
 
-    document.body.addEventListener('touch', function(e) {
+    document.body.addEventListener('touchstart', function(e) {
         e.preventDefault();
         requestFullscreen(document.documentElement);
     });
