@@ -1,12 +1,8 @@
-var amountScrolled = 300;
-var amountScrolledHeader = $('header').height();
-
 $(document).ready(function(){
-    $windowHeight = $(window).height();
-    //make html,body,container all the same size. Prevent resize bug in mobile
-    $("html, body, .container-fluid").css({
-        height: $windowHeight
-    });    
+
+    var amountScrolled = 300;
+    var amountScrolledHeader = $('header').height();
+    var $windowHeight = $(window).height();
 
     ////////////////// nav menu  //////////////////
     //open/close nav
@@ -78,5 +74,40 @@ $(document).ready(function(){
         }, 700);
         return false;
     });
+
+
+    var requestFullscreen = function (ele) {
+        if (ele.requestFullscreen) {
+            ele.requestFullscreen();
+        } else if (ele.webkitRequestFullscreen) {
+            ele.webkitRequestFullscreen();
+        } else if (ele.mozRequestFullScreen) {
+            ele.mozRequestFullScreen();
+        } else if (ele.msRequestFullscreen) {
+            ele.msRequestFullscreen();
+        } else {
+            console.log('Fullscreen API is not supported.');
+        }
+    };
+
+    var exitFullscreen = function () {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        } else {
+            console.log('Fullscreen API is not supported.');
+        }
+    };
+
+    document.body.addEventListener('touch', function(e) {
+        e.preventDefault();
+        requestFullscreen(document.documentElement);
+    });
+
 });
 
