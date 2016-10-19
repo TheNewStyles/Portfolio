@@ -15,13 +15,13 @@ $(document).ready(function(){
     });
 
     //fade in Nav bar
-    // $(window).scroll(function() {
-    //     if ( $(window).scrollTop() > amountScrolled ) {
-    //         $('.fixed-nav-bar').fadeIn('slow');
-    //     } else {
-    //         $('.fixed-nav-bar').fadeOut('slow');
-    //     }
-    // });
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('.fixed-nav-bar').fadeIn('slow');
+        } else {
+            $('.fixed-nav-bar').fadeOut('slow');
+        }
+    });
 
     //scroll within page on menu click
    $('#home-menu').click(function(e){
