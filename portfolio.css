@@ -70,8 +70,8 @@ header {
 /*   position: fixed; */
   right: 0;
   left: 0;
-  z-index: 1;
-  height: 100vh;  
+/*   z-index: 1; */
+/*   height: 100vh;   */
   margin-right: auto;
   margin-left: auto; 
   background-size: cover;
