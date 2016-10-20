@@ -5,17 +5,17 @@ var $windowHeight = $(window).height();
 $(document).ready(function(){
     
     //make html,body,container all the same size. Prevent resize bug in mobile
-    $("html, body, header").css({
-        height: $windowHeight
-    });    
+    // $("html, body, header").css({
+    //     height: $windowHeight
+    // });    
     // $().css({
-      
+
     // });
 
     ////////////////// nav menu  //////////////////
     //open/close nav
     $('#hamburger').click(function(){
-        $('#nav').animate({height:$windowHeight},200);
+        $('#nav').animate({height:$windowHeight+60},200);
         $('.closebtn').fadeIn('slow');
     });
     $('.closebtn, #home-menu, #contact-menu, #projects-menu').click(function(){
