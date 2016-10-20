@@ -8,6 +8,9 @@ $(document).ready(function(){
     $("html, body, header").css({
         height: $windowHeight
     });    
+    // $().css({
+      
+    // });
 
     ////////////////// nav menu  //////////////////
     //open/close nav
