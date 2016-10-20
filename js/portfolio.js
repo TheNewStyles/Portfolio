@@ -5,7 +5,7 @@ var $windowHeight = $(window).height();
 $(document).ready(function(){
     
     //make html,body,container all the same size. Prevent resize bug in mobile
-    $("html, body, .container-fluid").css({
+    $("html, body, header").css({
         height: $windowHeight
     });    
 
