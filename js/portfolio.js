@@ -1,13 +1,19 @@
 var amountScrolled = 300;
 var amountScrolledHeader = $('header').height();
 var $windowHeight = $(window).height();
+var $header = $('header');
+var $window = $(window);
+var $mouse = $('.mouse');
+
+$header.height( $window.height()+60);
+
+$window.resize(function() {
+  $header.height( $window.height()+60);
+  $mouse.css({'top':'93%'});
+});
 
 $(document).ready(function(){
-    
-    //make html,body,container all the same size. Prevent resize bug in mobile
-    $("html, body, .container-fluid").css({
-        height: $windowHeight
-    });    
+
 
     ////////////////// nav menu  //////////////////
     //open/close nav
