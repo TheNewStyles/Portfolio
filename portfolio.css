@@ -78,6 +78,10 @@ header {
   background-size: cover;
   will-change: transform; 
   -webkit-transform: translateZ(0); 
+  transition: height 1000000s ease;
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
 
   background: -webkit-linear-gradient(273deg, rgba(20,41,62,0.99), #f05d5e);
   
