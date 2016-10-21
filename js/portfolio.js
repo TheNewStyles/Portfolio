@@ -78,7 +78,7 @@ $(document).ready(function(){
     //scroll animation back to top
     $('a.back-to-top').click(function() {
         $('html, body').animate({
-            scrollTop: 0
+            scrollTop: -60
         }, 700);
         return false;
     });
