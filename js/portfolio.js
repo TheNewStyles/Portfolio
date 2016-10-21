@@ -1,16 +1,24 @@
+$(document).ready(function(){
+
 var amountScrolled = 300;
 var amountScrolledHeader = $('header').height();
 var $windowHeight = $(window).height();
 
-$(document).ready(function(){
-    
+    //TODO
+    //New height isn't overriding old height on screen resize. It is showing up in the html. Need to look into this 
+
+    // $(window).resize(function(){
+    //   $("header").css({
+    //       height: $(window).innerHeight()
+    //   });  
+    //   console.log($(window).innerHeight())
+    // });
+
     //make html,body,container all the same size. Prevent resize bug in mobile
     $("header").css({
         height: $windowHeight
     });    
-    // $().css({
 
-    // });
 
     ////////////////// nav menu  //////////////////
     //open/close nav
