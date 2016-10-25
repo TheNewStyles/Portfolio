@@ -1,4 +1,4 @@
-  console.log('Hello there.\n  \nMail: tyler.peterson@utah.edu\nline Telephone: 435-790-9724\nWeb: github.io/thenewstyles');
+  console.log('Hello there.\n  \nMail: tyler.peterson@utah.edu\n Telephone: 435-790-9724\nWeb: github.io/thenewstyles');
 
   var mouseX = 0,
       mouseY = 0,
