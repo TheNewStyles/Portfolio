@@ -21,17 +21,6 @@ html, body{
   font-family: 'Oswald', sans-serif;
 }
 
-/* .wrap {  
-  height: auto;
-  position: relative;  
-  z-index: 200;
-  top: 100vh;
-  background-color: #e7ecef;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 100%;  
-} */
-
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
 }
@@ -528,7 +517,8 @@ header img {
 .about-me div span {
   text-align: left;
   color: #f05d5e;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
 }
 
 
