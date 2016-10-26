@@ -1,3 +1,4 @@
+console.log('Hello there.\n  \nMail: tyler.peterson@utah.edu\nTelephone: 435-790-9724\nWeb: github.io/thenewstyles');
 $(document).ready(function(){
 
 var amountScrolled = 300;
