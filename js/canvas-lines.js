@@ -1,5 +1,3 @@
-  console.log('Hello there.\n  \nMail: tyler.peterson@utah.edu\n Telephone: 435-790-9724\nWeb: github.io/thenewstyles');
-
   var mouseX = 0,
       mouseY = 0,
       SEPARATION = 200,
@@ -36,7 +34,7 @@
     
 
     camera = new THREE.PerspectiveCamera(
-    	25,
+    	55,
       window.innerWidth / window.innerHeight,
       1,
       10000
@@ -142,8 +140,8 @@
 
 	function render() {
 		
-    camera.position.x += ( mouseX - camera.position.x ) * .01;
-    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .01;
+    camera.position.x += ( mouseX - camera.position.x ) * .05;
+    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
     camera.lookAt( scene.position );
     renderer.render( scene, camera );
   
