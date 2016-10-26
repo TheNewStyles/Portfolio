@@ -92,14 +92,14 @@
   var el = document.getElementById('split');
 
 //mouse over split div to move lines
- el.addEventListener('mousemove', function(){
+ el.addEventListener('mousemove', function(event){
 
   	mouseX = event.clientX - windowHalfX;
     mouseY = event.clientY - windowHalfY;
 
   });
 
-  el.addEventListener('touchstart', function(){
+  el.addEventListener('touchstart', function(event){
   
     if ( event.touches.length > 1 ){
       event.preventDefault();
@@ -109,7 +109,7 @@
 
   });
 
- el.addEventListener('touchmove', function(){
+ el.addEventListener('touchmove', function(event){
   
     if ( event.touches.length > 1 ){
       event.preventDefault();
@@ -120,7 +120,7 @@
   });
 
 
-  el.addEventListener('touchenter', function(){
+  el.addEventListener('touchenter', function(event){
   
     if ( event.touches.length > 1 ){
       event.preventDefault();
