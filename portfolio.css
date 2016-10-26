@@ -13,9 +13,9 @@ html, body{
 }
 
 .page-title h1 {
-  font-size: 5.5em;
+  font-size: 7.5em;
   letter-spacing: 3px;
-  padding-top: 12%;
+  padding-top: 10%;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Oswald', sans-serif;
@@ -36,14 +36,18 @@ h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
 }
 
-p , .typer{
+p {
   font-size: 1.2em;
-  line-height: 1.8;
+  line-height: 1.4;
   margin-top: 30px;
   font-weight: 300;
   padding-top: 1em;
   color: #272932;
-  font-family: 'Oswald', serif;
+  font-family: 'Quattrocento', serif;
+}
+
+.typer{
+  font-family: 'Oswald', sans-serif;
 }
 
 img {
@@ -65,13 +69,9 @@ img {
 /***************** Header img and personal logo *****************/
 
 header {
-/*   margin-bottom: 4em; */
   text-align: center;
-/*   position: fixed; */
   right: 0;
   left: 0;
-/*   z-index: 1; */
-/*   height: 100vh;   */
   margin-right: auto;
   margin-left: auto; 
   background-size: cover;
@@ -139,12 +139,6 @@ header img {
   .mouse-scroll{ 
     margin-top: 1px;
   }
-
-  .mouse{
-    position: absolute;
-    right: 46.5% !important;
-    top: 91% !important;
-  }  
 
 }
 
@@ -221,7 +215,7 @@ header img {
 /*   // The Mouse */
 .mouse {
   position: absolute;
-  right: 49.10%;
+  right: calc(50% - 15px);
   top: 93%;
   display: block;
   width: 30px;
