@@ -127,7 +127,7 @@ header img {
 @media screen and (max-width:  800px) {
 
   .page-title h1{
-    padding-top: 30%;
+    padding-top: 20%;
     font-size: 4.5em;
   }
 
@@ -216,7 +216,7 @@ header img {
 .mouse {
   position: absolute;
   right: calc(50% - 15px);
-  top: 93%;
+  top: 91%;
   display: block;
   width: 30px;
   height: 45px;
