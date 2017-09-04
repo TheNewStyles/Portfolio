@@ -15,7 +15,7 @@ html, body{
 .page-title h1 {
   font-size: 7.5em;
   letter-spacing: 3px;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Oswald', sans-serif;
@@ -116,7 +116,7 @@ header img {
 @media screen and (max-width:  800px) {
 
   .page-title h1{
-    padding-top: 20%;
+    padding-top: 5%;
     font-size: 4.5em;
   }
 
